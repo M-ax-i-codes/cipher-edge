@@ -57,10 +57,10 @@ Frameworks / models / APIs: Node 22+ / TypeScript with zero runtime dependencies
 The LLM's value in TA strategies is not replacing the indicator — it is resolving ambiguous multi-condition confluence a rigid script cannot, attaching calibrated confidence, and defaulting to NO_TRADE. But the harder lesson from building CipherEdge: most beloved retail setups lose money net of costs once encoded faithfully and tested without tuning. Agentic trading products earn trust by being auditable and honest about negative results — an agent that mostly says NO_TRADE and can prove why is more valuable than one that always fires. Suggestion for Bitget: expose indicator-ready candle history and a paper-trading sandbox through the MCP so agents can forward-test without live risk.
 
 ## Submission Material Links
-- Project link (GitHub, public, full README): https://github.com/M-ax-i-codes/cipheredge [push pending — update if repo name differs]
-- Run records (backtest report + code that generated it; screenshots not used): https://github.com/M-ax-i-codes/cipheredge/blob/main/reports/backtest_2026-09-23_15-18-41Z/report.md
-- Run records (trade ledger CSV + equity curve): https://github.com/M-ax-i-codes/cipheredge/tree/main/reports/backtest_2026-09-23_15-18-41Z
-- Data integrity audit: https://github.com/M-ax-i-codes/cipheredge/blob/main/data/INTEGRITY.md
+- Project link (GitHub, public, full README): https://github.com/M-ax-i-codes/cipher-edge
+- Run records (backtest report + code that generated it; screenshots not used): https://github.com/M-ax-i-codes/cipher-edge/blob/main/reports/backtest_2026-09-23_15-18-41Z/report.md
+- Run records (trade ledger CSV + equity curve): https://github.com/M-ax-i-codes/cipher-edge/tree/main/reports/backtest_2026-09-23_15-18-41Z
+- Data integrity audit: https://github.com/M-ax-i-codes/cipher-edge/blob/main/data/INTEGRITY.md
 - Demo video: [TODO — ≤3 min, public X post or YouTube link]
 
 ## Role of the LLM / AI in Your Project
