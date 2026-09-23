@@ -1,0 +1,33 @@
+{
+  "name": "cipheredge",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "CipherEdge - a reproducible VMC Cipher B momentum-exhaustion & trend-continuation research and paper-trading agent for Bitget. Research / paper trading only; never places live orders.",
+  "keywords": [
+    "bitget",
+    "hackathon",
+    "agent",
+    "vmc-cipher-b",
+    "wavetrend",
+    "momentum",
+    "backtest",
+    "paper-trading"
+  ],
+  "engines": {
+    "node": ">=22.18.0"
+  },
+  "scripts": {
+    "backtest": "node src/cli.ts backtest",
+    "paper": "node src/cli.ts paper",
+    "report": "node src/cli.ts report",
+    "doctor": "node src/cli.ts doctor",
+    "test": "node --test",
+    "typecheck": "tsc --noEmit"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^26.6.2",
+    "typescript": "^5.9.3"
+  }
+}

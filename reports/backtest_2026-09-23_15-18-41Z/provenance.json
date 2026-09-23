@@ -1,0 +1,115 @@
+{
+  "window": {
+    "from": 1782229500000,
+    "to": 1790005500000,
+    "outOfSampleFrom": 1787413500000,
+    "fromIso": "2026-06-23T15:45:00.000Z",
+    "toIso": "2026-09-21T15:45:00.000Z",
+    "outOfSampleFromIso": "2026-08-22T15:45:00.000Z",
+    "days": 90,
+    "outOfSampleDays": 30
+  },
+  "provenance": [
+    {
+      "symbol": "BTCUSDT",
+      "granularity": "15m",
+      "source": "local-jsonl",
+      "path": "C:\\Users\\USER\\Documents\\Codex\\2026-09-19\\upd\\cipheredge\\data\\candles\\BTCUSDT.15m.jsonl",
+      "bars": 8788,
+      "firstTs": 1782058500000,
+      "lastTs": 1790005500000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "granularity": "1h",
+      "source": "local-jsonl",
+      "path": "C:\\Users\\USER\\Documents\\Codex\\2026-09-19\\upd\\cipheredge\\data\\candles\\BTCUSDT.1h.jsonl",
+      "bars": 2197,
+      "firstTs": 1782061200000,
+      "lastTs": 1790002800000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "granularity": "15m",
+      "source": "local-jsonl",
+      "path": "C:\\Users\\USER\\Documents\\Codex\\2026-09-19\\upd\\cipheredge\\data\\candles\\ETHUSDT.15m.jsonl",
+      "bars": 8788,
+      "firstTs": 1782058500000,
+      "lastTs": 1790005500000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "granularity": "1h",
+      "source": "local-jsonl",
+      "path": "C:\\Users\\USER\\Documents\\Codex\\2026-09-19\\upd\\cipheredge\\data\\candles\\ETHUSDT.1h.jsonl",
+      "bars": 2197,
+      "firstTs": 1782061200000,
+      "lastTs": 1790002800000
+    },
+    {
+      "symbol": "SOLUSDT",
+      "granularity": "15m",
+      "source": "local-jsonl",
+      "path": "C:\\Users\\USER\\Documents\\Codex\\2026-09-19\\upd\\cipheredge\\data\\candles\\SOLUSDT.15m.jsonl",
+      "bars": 8788,
+      "firstTs": 1782058500000,
+      "lastTs": 1790005500000
+    },
+    {
+      "symbol": "SOLUSDT",
+      "granularity": "1h",
+      "source": "local-jsonl",
+      "path": "C:\\Users\\USER\\Documents\\Codex\\2026-09-19\\upd\\cipheredge\\data\\candles\\SOLUSDT.1h.jsonl",
+      "bars": 2197,
+      "firstTs": 1782061200000,
+      "lastTs": 1790002800000
+    }
+  ],
+  "seriesStats": [
+    {
+      "symbol": "BTCUSDT",
+      "triggerBars": 8788,
+      "structureBars": 2197,
+      "barsInWindow": 8599,
+      "deterministicSetups": 66,
+      "htfVetoed": 19,
+      "htfAnchored": 47,
+      "entries": 38,
+      "riskRejections": 3,
+      "llmVetoed": 0
+    },
+    {
+      "symbol": "ETHUSDT",
+      "triggerBars": 8788,
+      "structureBars": 2197,
+      "barsInWindow": 8599,
+      "deterministicSetups": 58,
+      "htfVetoed": 18,
+      "htfAnchored": 40,
+      "entries": 34,
+      "riskRejections": 1,
+      "llmVetoed": 0
+    },
+    {
+      "symbol": "SOLUSDT",
+      "triggerBars": 8788,
+      "structureBars": 2197,
+      "barsInWindow": 8599,
+      "deterministicSetups": 51,
+      "htfVetoed": 16,
+      "htfAnchored": 35,
+      "entries": 28,
+      "riskRejections": 3,
+      "llmVetoed": 0
+    }
+  ],
+  "funnel": {
+    "barsEvaluated": 25797,
+    "deterministicSetups": 175,
+    "htfVetoed": 53,
+    "htfAnchored": 122,
+    "llmVetoed": 0,
+    "riskRejected": 7,
+    "executed": 100
+  }
+}

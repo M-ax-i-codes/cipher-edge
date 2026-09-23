@@ -1,0 +1,37 @@
+{
+  "ledger": {
+    "mode": "replay",
+    "generatedAt": "2026-09-21T16:40:22.706Z",
+    "startingBalance": 10000,
+    "endingBalance": 9419.277073,
+    "netChange": -580.722927,
+    "netChangePct": -5.8072,
+    "events": 200,
+    "roundTrips": 100,
+    "wins": 35,
+    "losses": 65,
+    "totalFees": 386.140811,
+    "totalSlippage": 193.070416,
+    "totalFunding": 13.342992,
+    "placesRealOrders": false,
+    "dataSource": "replay of committed Bitget public spot candles (15m trigger / 1h structure) - NOT a live feed",
+    "windowFromIso": "2026-06-23T15:45:00.000Z",
+    "windowToIso": "2026-09-21T15:45:00.000Z"
+  },
+  "gate": {
+    "checkedAt": "2026-09-21T16:40:21.986Z",
+    "gate": {
+      "requireCompletenessPct": 99,
+      "maxAdjacentGapBars": 4,
+      "strict": true
+    },
+    "symbolsPassed": [
+      "BTCUSDT",
+      "ETHUSDT",
+      "SOLUSDT"
+    ],
+    "symbolsFailed": [],
+    "allPassed": true
+  },
+  "validatedUniverse": true
+}

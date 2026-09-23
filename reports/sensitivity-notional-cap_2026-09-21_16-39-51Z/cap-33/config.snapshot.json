@@ -1,0 +1,137 @@
+{
+  "hash": "d57f92765ac46fc1",
+  "overrides": {
+    "maxPositionNotionalPct": 33,
+    "symbols": 3,
+    "triggerGranularity": "15m"
+  },
+  "config": {
+    "meta": {
+      "project": "CipherEdge",
+      "track": "Agentic Trading",
+      "mode": "research-and-paper-trading-only",
+      "placesRealOrders": false,
+      "unverifiedAssumptions": [
+        "momentumWave = EMA(WaveTrend os1, 3); VMC has not published the Cipher B momentum-wave formula",
+        "WaveTrend channel-length constants (n1=10, n2=21, os2Smooth=4) follow the common WaveTrend default, not a published VMC Cipher B spec",
+        "fees (10bps taker), slippage (5bps) and funding (1bp per 8h) are MODELLED assumptions, not empirically observed fills",
+        "funding is modelled as a constant rate; real funding varies per symbol and per period"
+      ]
+    },
+    "timeframes": {
+      "structure": "1h",
+      "trigger": "15m",
+      "secondaryTrigger": "5m"
+    },
+    "strategy": {
+      "cipherB": {
+        "wavetrend": {
+          "n1": 10,
+          "n2": 21,
+          "os2Smooth": 4
+        },
+        "momentumSmooth": 3,
+        "overbought": 60,
+        "oversold": -60,
+        "divergence": {
+          "swingLookback": 5,
+          "minSwingBars": 2,
+          "maxSwingAgeBars": 60
+        }
+      },
+      "breakout": {
+        "arm": 5,
+        "retestTolerancePct": 0.25,
+        "maxSwingAgeBars": 60,
+        "retestWindowBars": 24
+      },
+      "sweepTolerancePct": 0.3,
+      "momentumCoolMax": 0,
+      "maxSwingAgeBars": 60,
+      "signalCooldownBars": 3,
+      "warmupBars": 60
+    },
+    "htf": {
+      "enabled": true,
+      "arm": 5,
+      "tolerancePct": 0.6,
+      "maxAgeBars": 240
+    },
+    "risk": {
+      "riskPerTradePct": 0.5,
+      "maxRiskPerTradePct": 1,
+      "setupAStopBufferPct": 0.4,
+      "setupBStopBufferPct": 0.4,
+      "minRiskReward": 1.5,
+      "maxConcurrentPositions": 3,
+      "dailyLossCapPct": 2,
+      "maxPositionNotionalPct": 20,
+      "minStopDistancePct": 0.15,
+      "tp1Multiple": 1.5,
+      "tp2Multiple": 2.5
+    },
+    "execution": {
+      "tp1ExitPct": 50,
+      "moveStopToBreakeven": true,
+      "timeStopMinutes": 720,
+      "pessimisticIntraBar": true
+    },
+    "costs": {
+      "takerFeeBps": 10,
+      "slippageBps": 5,
+      "fundingBpsPer8h": 1
+    },
+    "backtest": {
+      "startingCapital": 10000,
+      "days": 90,
+      "outOfSampleDays": 30,
+      "dataDir": "data/candles",
+      "triggerGranularity": "15m",
+      "structureGranularity": "1h",
+      "resampleFrom": "5m",
+      "allowNetwork": false,
+      "symbols": [
+        "BTCUSDT",
+        "ETHUSDT",
+        "SOLUSDT"
+      ],
+      "extendedSymbols": [
+        "BTCUSDT",
+        "ETHUSDT",
+        "SOLUSDT",
+        "RNVDAUSDT",
+        "RTSLAUSDT",
+        "RAAPLUSDT",
+        "RMSFTUSDT",
+        "RGOOGLUSDT",
+        "RAMZNUSDT",
+        "RMETAUSDT",
+        "RAMDUSDT",
+        "RPLTRUSDT",
+        "RCOINUSDT",
+        "RMSTRUSDT",
+        "RQQQUSDT",
+        "RSPYUSDT"
+      ]
+    },
+    "dataQuality": {
+      "requireCompletenessPct": 99,
+      "maxAdjacentGapBars": 4,
+      "strict": true
+    },
+    "llm": {
+      "enabled": false,
+      "provider": "mock",
+      "model": "mock-deterministic-v1",
+      "promptVersion": "cipheredge-llm-v1",
+      "baseUrl": "https://hackathon.bitgetops.com/v1",
+      "apiKeyEnv": "BITGET_QWEN_API_KEY",
+      "temperature": 0.1,
+      "maxTokens": 800,
+      "timeoutMs": 60000,
+      "minConfidenceToTrade": 0
+    },
+    "sourcePath": "C:\\Users\\USER\\Documents\\Codex\\2026-09-19\\upd\\cipheredge\\config\\default.json",
+    "hash": "d57f92765ac46fc1"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "generatedAt": "2026-09-21T16:39:52.650Z",
+  "configHash": "d57f92765ac46fc1",
+  "primaryCapPct": 20,
+  "alternativeCapPct": 33,
+  "note": "OBSERVED from two runs of identical code and data; only maxPositionNotionalPct differs. The default config was not changed.",
+  "runs": [
+    {
+      "notionalCapPct": 20,
+      "isConfigDefault": true,
+      "trades": 100,
+      "cappedTrades": 100,
+      "bindingConstraint": {
+        "notional-cap": 100
+      },
+      "avgIntendedRiskPct": 0.5,
+      "avgActualRiskPct": 0.1262,
+      "totalReturnPct": -5.807,
+      "maxDrawdownPct": 6.39,
+      "netPnl": -580.72,
+      "maxExposurePct": 60.14491815224433
+    },
+    {
+      "notionalCapPct": 33,
+      "isConfigDefault": false,
+      "trades": 100,
+      "cappedTrades": 100,
+      "bindingConstraint": {
+        "notional-cap": 100
+      },
+      "avgIntendedRiskPct": 0.5,
+      "avgActualRiskPct": 0.2082,
+      "totalReturnPct": -9.417,
+      "maxDrawdownPct": 10.337,
+      "netPnl": -941.66,
+      "maxExposurePct": 99.24888144473711
+    }
+  ]
+}

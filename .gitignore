@@ -1,0 +1,21 @@
+# dependencies
+node_modules/
+
+# secrets & local config - never commit
+.env
+.env.*
+config/secrets.json
+*.local.json
+*.pem
+*.key
+
+# logs & scratch
+*.log
+work/
+.DS_Store
+
+# build output (project runs TS natively; nothing is emitted)
+dist/
+
+# NOTE: data/candles/ and reports/ are intentionally COMMITTED so the
+# observed backtest is reproducible from the repository.

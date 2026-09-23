@@ -1,0 +1,470 @@
+{
+  "runId": "backtest_2026-09-21_16-34-11Z",
+  "generatedAt": "2026-09-21T16:34:12.316Z",
+  "configHash": "95f1b9227f451336",
+  "node": "v24.19.0",
+  "mode": "research-and-paper-trading-only",
+  "placesRealOrders": false,
+  "window": {
+    "from": 1782229500000,
+    "to": 1790005500000,
+    "outOfSampleFrom": 1787413500000,
+    "fromIso": "2026-06-23T15:45:00.000Z",
+    "toIso": "2026-09-21T15:45:00.000Z",
+    "outOfSampleFromIso": "2026-08-22T15:45:00.000Z",
+    "days": 90,
+    "outOfSampleDays": 30
+  },
+  "full": {
+    "returns": {
+      "startingCapital": 10000,
+      "finalEquity": 9395.11,
+      "totalReturnPct": -6.049,
+      "maxDrawdownPct": 6.63,
+      "sharpe": -6.779,
+      "sortino": -2.977,
+      "volatilityPctAnnualized": 3.74,
+      "periodsPerYear": 35040,
+      "bars": 8599,
+      "avgEquity": 9669.37,
+      "maxOpenPositions": 3
+    },
+    "trades": {
+      "trades": 104,
+      "wins": 35,
+      "losses": 69,
+      "winRatePct": 33.65,
+      "netPnl": -604.89,
+      "grossWin": 391.09,
+      "grossLoss": 995.98,
+      "profitFactor": 0.393,
+      "expectancy": -5.82,
+      "avgWin": 11.17,
+      "avgLoss": -14.43,
+      "avgR": -0.839,
+      "medianR": -1.325,
+      "bestR": 1.682,
+      "worstR": -22.432,
+      "avgHoldingMinutes": 333.8,
+      "medianHoldingMinutes": 240,
+      "fees": 401.15,
+      "slippage": 200.57,
+      "funding": 13.34,
+      "totalModelledCosts": 414.48,
+      "turnoverNotional": 401145.64,
+      "exitReasons": {
+        "stop": 61,
+        "tp2": 18,
+        "time": 25
+      },
+      "longs": 94,
+      "shorts": 10,
+      "setupA": 10,
+      "setupB": 94,
+      "notionalCapApplied": 0,
+      "bindingConstraint": {
+        "undefined": 104
+      },
+      "avgIntendedRiskPct": 0.5,
+      "avgActualRiskPct": 0.1218,
+      "maxActualRiskPct": 0.1951,
+      "avgConfidence": 0.592,
+      "bySymbol": [
+        {
+          "symbol": "ETHUSDT",
+          "trades": 34,
+          "netPnl": -258.68,
+          "winRatePct": 23.5,
+          "avgR": -0.681
+        },
+        {
+          "symbol": "SOLUSDT",
+          "trades": 30,
+          "netPnl": -222.59,
+          "winRatePct": 33.3,
+          "avgR": -0.904
+        },
+        {
+          "symbol": "BTCUSDT",
+          "trades": 40,
+          "netPnl": -123.62,
+          "winRatePct": 42.5,
+          "avgR": -0.923
+        }
+      ],
+      "bySetup": [
+        {
+          "group": "BREAKOUT_RETEST",
+          "trades": 94,
+          "netPnl": -560.36,
+          "winRatePct": 33,
+          "avgR": -0.865
+        },
+        {
+          "group": "BEARISH_DIVERGENCE",
+          "trades": 10,
+          "netPnl": -44.54,
+          "winRatePct": 40,
+          "avgR": -0.585
+        }
+      ],
+      "byDirection": [
+        {
+          "group": "LONG",
+          "trades": 94,
+          "netPnl": -560.36,
+          "winRatePct": 33,
+          "avgR": -0.865
+        },
+        {
+          "group": "SHORT",
+          "trades": 10,
+          "netPnl": -44.54,
+          "winRatePct": 40,
+          "avgR": -0.585
+        }
+      ]
+    }
+  },
+  "inSample": {
+    "returns": {
+      "startingCapital": 10000,
+      "finalEquity": 9520.56,
+      "totalReturnPct": -4.794,
+      "maxDrawdownPct": 5.168,
+      "sharpe": -8.486,
+      "sortino": -3.661,
+      "volatilityPctAnnualized": 3.53,
+      "periodsPerYear": 35040,
+      "bars": 5732,
+      "avgEquity": 9779.56,
+      "maxOpenPositions": 3
+    },
+    "trades": {
+      "trades": 68,
+      "wins": 19,
+      "losses": 49,
+      "winRatePct": 27.94,
+      "netPnl": -479.44,
+      "grossWin": 194.57,
+      "grossLoss": 674.01,
+      "profitFactor": 0.289,
+      "expectancy": -7.05,
+      "avgWin": 10.24,
+      "avgLoss": -13.76,
+      "avgR": -1.128,
+      "medianR": -1.343,
+      "bestR": 1.682,
+      "worstR": -22.432,
+      "avgHoldingMinutes": 341.7,
+      "medianHoldingMinutes": 240,
+      "fees": 265.16,
+      "slippage": 132.58,
+      "funding": 9.2,
+      "totalModelledCosts": 274.36,
+      "turnoverNotional": 265162.58,
+      "exitReasons": {
+        "stop": 40,
+        "tp2": 9,
+        "time": 19
+      },
+      "longs": 62,
+      "shorts": 6,
+      "setupA": 6,
+      "setupB": 62,
+      "notionalCapApplied": 0,
+      "bindingConstraint": {
+        "undefined": 68
+      },
+      "avgIntendedRiskPct": 0.5,
+      "avgActualRiskPct": 0.1173,
+      "maxActualRiskPct": 0.1951,
+      "avgConfidence": 0.59,
+      "bySymbol": [
+        {
+          "symbol": "ETHUSDT",
+          "trades": 21,
+          "netPnl": -194.94,
+          "winRatePct": 14.3,
+          "avgR": -0.874
+        },
+        {
+          "symbol": "SOLUSDT",
+          "trades": 22,
+          "netPnl": -178.31,
+          "winRatePct": 31.8,
+          "avgR": -1.053
+        },
+        {
+          "symbol": "BTCUSDT",
+          "trades": 25,
+          "netPnl": -106.19,
+          "winRatePct": 36,
+          "avgR": -1.407
+        }
+      ],
+      "bySetup": [
+        {
+          "group": "BREAKOUT_RETEST",
+          "trades": 62,
+          "netPnl": -462.04,
+          "winRatePct": 25.8,
+          "avgR": -1.192
+        },
+        {
+          "group": "BEARISH_DIVERGENCE",
+          "trades": 6,
+          "netPnl": -17.4,
+          "winRatePct": 50,
+          "avgR": -0.458
+        }
+      ],
+      "byDirection": [
+        {
+          "group": "LONG",
+          "trades": 62,
+          "netPnl": -462.04,
+          "winRatePct": 25.8,
+          "avgR": -1.192
+        },
+        {
+          "group": "SHORT",
+          "trades": 6,
+          "netPnl": -17.4,
+          "winRatePct": 50,
+          "avgR": -0.458
+        }
+      ]
+    }
+  },
+  "outOfSample": {
+    "returns": {
+      "startingCapital": 9520.56,
+      "finalEquity": 9395.11,
+      "totalReturnPct": -1.318,
+      "maxDrawdownPct": 2.082,
+      "sharpe": -3.909,
+      "sortino": -1.764,
+      "volatilityPctAnnualized": 4.13,
+      "periodsPerYear": 35040,
+      "bars": 2867,
+      "avgEquity": 9449.07,
+      "maxOpenPositions": 3
+    },
+    "trades": {
+      "trades": 36,
+      "wins": 16,
+      "losses": 20,
+      "winRatePct": 44.44,
+      "netPnl": -125.45,
+      "grossWin": 196.52,
+      "grossLoss": 321.98,
+      "profitFactor": 0.61,
+      "expectancy": -3.48,
+      "avgWin": 12.28,
+      "avgLoss": -16.1,
+      "avgR": -0.293,
+      "medianR": -0.524,
+      "bestR": 1.671,
+      "worstR": -1.902,
+      "avgHoldingMinutes": 318.8,
+      "medianHoldingMinutes": 240,
+      "fees": 135.98,
+      "slippage": 67.99,
+      "funding": 4.14,
+      "totalModelledCosts": 140.12,
+      "turnoverNotional": 135983.07,
+      "exitReasons": {
+        "tp2": 9,
+        "stop": 21,
+        "time": 6
+      },
+      "longs": 32,
+      "shorts": 4,
+      "setupA": 4,
+      "setupB": 32,
+      "notionalCapApplied": 0,
+      "bindingConstraint": {
+        "undefined": 36
+      },
+      "avgIntendedRiskPct": 0.5,
+      "avgActualRiskPct": 0.1303,
+      "maxActualRiskPct": 0.1948,
+      "avgConfidence": 0.597,
+      "bySymbol": [
+        {
+          "symbol": "ETHUSDT",
+          "trades": 13,
+          "netPnl": -63.74,
+          "winRatePct": 38.5,
+          "avgR": -0.369
+        },
+        {
+          "symbol": "SOLUSDT",
+          "trades": 8,
+          "netPnl": -44.28,
+          "winRatePct": 37.5,
+          "avgR": -0.497
+        },
+        {
+          "symbol": "BTCUSDT",
+          "trades": 15,
+          "netPnl": -17.43,
+          "winRatePct": 53.3,
+          "avgR": -0.118
+        }
+      ],
+      "bySetup": [
+        {
+          "group": "BREAKOUT_RETEST",
+          "trades": 32,
+          "netPnl": -98.32,
+          "winRatePct": 46.9,
+          "avgR": -0.232
+        },
+        {
+          "group": "BEARISH_DIVERGENCE",
+          "trades": 4,
+          "netPnl": -27.13,
+          "winRatePct": 25,
+          "avgR": -0.776
+        }
+      ],
+      "byDirection": [
+        {
+          "group": "LONG",
+          "trades": 32,
+          "netPnl": -98.32,
+          "winRatePct": 46.9,
+          "avgR": -0.232
+        },
+        {
+          "group": "SHORT",
+          "trades": 4,
+          "netPnl": -27.13,
+          "winRatePct": 25,
+          "avgR": -0.776
+        }
+      ]
+    }
+  },
+  "funnel": {
+    "barsEvaluated": 25797,
+    "deterministicSetups": 175,
+    "htfVetoed": 53,
+    "htfAnchored": 122,
+    "llmVetoed": 0,
+    "riskRejected": 3,
+    "executed": 104
+  },
+  "seriesStats": [
+    {
+      "symbol": "BTCUSDT",
+      "triggerBars": 8788,
+      "structureBars": 2197,
+      "barsInWindow": 8599,
+      "deterministicSetups": 66,
+      "htfVetoed": 19,
+      "htfAnchored": 47,
+      "entries": 40,
+      "riskRejections": 1,
+      "llmVetoed": 0
+    },
+    {
+      "symbol": "ETHUSDT",
+      "triggerBars": 8788,
+      "structureBars": 2197,
+      "barsInWindow": 8599,
+      "deterministicSetups": 58,
+      "htfVetoed": 18,
+      "htfAnchored": 40,
+      "entries": 34,
+      "riskRejections": 1,
+      "llmVetoed": 0
+    },
+    {
+      "symbol": "SOLUSDT",
+      "triggerBars": 8788,
+      "structureBars": 2197,
+      "barsInWindow": 8599,
+      "deterministicSetups": 51,
+      "htfVetoed": 16,
+      "htfAnchored": 35,
+      "entries": 30,
+      "riskRejections": 1,
+      "llmVetoed": 0
+    }
+  ],
+  "provenance": [
+    {
+      "symbol": "BTCUSDT",
+      "granularity": "15m",
+      "source": "local-jsonl",
+      "path": "C:\\Users\\USER\\Documents\\Codex\\2026-09-19\\upd\\cipheredge\\data\\candles\\BTCUSDT.15m.jsonl",
+      "bars": 8788,
+      "firstTs": 1782058500000,
+      "lastTs": 1790005500000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "granularity": "1h",
+      "source": "local-jsonl",
+      "path": "C:\\Users\\USER\\Documents\\Codex\\2026-09-19\\upd\\cipheredge\\data\\candles\\BTCUSDT.1h.jsonl",
+      "bars": 2197,
+      "firstTs": 1782061200000,
+      "lastTs": 1790002800000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "granularity": "15m",
+      "source": "local-jsonl",
+      "path": "C:\\Users\\USER\\Documents\\Codex\\2026-09-19\\upd\\cipheredge\\data\\candles\\ETHUSDT.15m.jsonl",
+      "bars": 8788,
+      "firstTs": 1782058500000,
+      "lastTs": 1790005500000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "granularity": "1h",
+      "source": "local-jsonl",
+      "path": "C:\\Users\\USER\\Documents\\Codex\\2026-09-19\\upd\\cipheredge\\data\\candles\\ETHUSDT.1h.jsonl",
+      "bars": 2197,
+      "firstTs": 1782061200000,
+      "lastTs": 1790002800000
+    },
+    {
+      "symbol": "SOLUSDT",
+      "granularity": "15m",
+      "source": "local-jsonl",
+      "path": "C:\\Users\\USER\\Documents\\Codex\\2026-09-19\\upd\\cipheredge\\data\\candles\\SOLUSDT.15m.jsonl",
+      "bars": 8788,
+      "firstTs": 1782058500000,
+      "lastTs": 1790005500000
+    },
+    {
+      "symbol": "SOLUSDT",
+      "granularity": "1h",
+      "source": "local-jsonl",
+      "path": "C:\\Users\\USER\\Documents\\Codex\\2026-09-19\\upd\\cipheredge\\data\\candles\\SOLUSDT.1h.jsonl",
+      "bars": 2197,
+      "firstTs": 1782061200000,
+      "lastTs": 1790002800000
+    }
+  ],
+  "overrides": {
+    "symbols": 3,
+    "triggerGranularity": "15m"
+  },
+  "unverifiedAssumptions": [
+    "momentumWave = EMA(WaveTrend os1, 3); VMC has not published the Cipher B momentum-wave formula",
+    "WaveTrend channel-length constants (n1=10, n2=21, os2Smooth=4) follow the common WaveTrend default, not a published VMC Cipher B spec",
+    "fees (10bps taker), slippage (5bps) and funding (1bp per 8h) are MODELLED assumptions, not empirically observed fills",
+    "funding is modelled as a constant rate; real funding varies per symbol and per period"
+  ],
+  "costBasis": {
+    "fees": "MODELLED - Bitget spot taker bps from config; no live fills exist",
+    "slippage": "MODELLED - flat adverse bps; not measured against an order book",
+    "funding": "MODELLED - flat bps per 8h; spot rToken funding was not sampled",
+    "observedExecutionCosts": "NONE - CipherEdge has never placed an order"
+  }
+}
